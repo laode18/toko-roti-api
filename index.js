@@ -15,6 +15,4 @@ app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/product", productCrudRoutes);
 
-
-// ✅ Export app agar bisa dipakai oleh Vercel
-module.exports = app;
+module.exports = app; // penting untuk @vercel/node
